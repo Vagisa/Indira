@@ -33,7 +33,7 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 5% 0;
+    padding: 5%;
 }
 
 .title {
@@ -67,7 +67,7 @@ img {
   }
 
 .content {
-    padding: 5% 0;
+    padding: 5%;
 }
 
 .content-header {
@@ -143,5 +143,14 @@ height: 100%;
 }
 
 .footer {
-    padding: 5% 0;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.qrcode {
+    align-self: center;
+    width: 200px;
+    height: 200px;
 }
