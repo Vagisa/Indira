@@ -1,8 +1,23 @@
 body {
+    height: 100vh;
     max-width: 960px;
     padding: 0;
     margin: 0 auto;
 }
+
+  img {
+    width: calc(70vw - 30px); /* Ширина для больших экранов */
+    max-width: 800px; /* Ограничение максимальной ширины */
+    height: auto; /* Сохраняем пропорции */
+  }
+
+  /* Для экранов менее 768px */
+  @media (max-width: 768px) {
+    img {
+      width: calc(90vw - 20px); /* Увеличиваем ширину на меньших экранах */
+    }
+  }
+
 .header {
     background-image: url(./img/photo_2024-12-15\ 11.42.41.jpeg);
     background-position: top;
