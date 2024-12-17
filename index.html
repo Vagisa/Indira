@@ -9,12 +9,13 @@
 </head>
 <body>
   <header class="header">
-    <h1>Добро пожаловать на мой сайт</h1>
+    <h1 class="title">Добро пожаловать на мой сайт</h1>
+    <img class="author-photo" src="./img/photo_2024-12-15 11.42.41.jpeg" aria-label="photo by the author">
     <p>Тема сайта: Психология</p>
     <p>
-        Информация об авторе:
-        Шакирова Индира Ильнуровна, 
-        16 лет,
+        Информация об авторе:<br>
+        Шакирова Индира Ильнуровна,<br>
+        16 лет,<br>
         студентка Татарского педагогического колледжа
     </p>
     <p>
@@ -24,26 +25,105 @@
     </p>
   </header>
   <main class="content">
-    <h2>Видео о психологии</h2>
-    <ul>Видео:
-      <li class="video-container">
-        <h3>
-          Главная причина деградации человечества. Философ Макаров о психологии масс,
-          осознанности и рефлексии
-        </h3>
-        <iframe width="1015" height="515" src="https://www.youtube.com/embed/snxuO2jn93I"
-        title="Главная причина деградации человечества. Философ Макаров о психологии масс,
-        осознанности и рефлексии" frameborder="0" allow="accelerometer; autoplay;
-        clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-        </iframe>
-      </li>
-      <li>
-
-      </li>
-    </ul>
+    <section>
+      <h2 class="content-header">Видео о психологии</h2>
+      <ul class="video-list">Видео:
+        <li class="video-container">
+          <h3>
+            Главная причина деградации человечества. Философ Макаров о психологии масс,
+            осознанности и рефлексии
+          </h3>
+          <iframe width="1015" height="515" src="https://www.youtube.com/embed/snxuO2jn93I"
+          title="Главная причина деградации человечества. Философ Макаров о психологии масс,
+          осознанности и рефлексии" frameborder="0" allow="accelerometer; autoplay;
+          clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+          </iframe>
+        </li>
+        <li class="video-container">
+          <h3>Психология _ Общее понятие о психологии.  Лекция 1</h3>
+          <iframe
+          width="720" height="405"
+          src="https://rutube.ru/play/embed/d4f74d0b6fd701de6487e73742f211aa"
+          frameBorder="0" allow="clipboard-write; autoplay"
+          webkitAllowFullScreen mozallowfullscreen allowFullScreen>
+          </iframe>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2 class="content-header">Педагогическая психология. Слайд</h2>
+      <div class="slideshow-container">
+        <!-- Слайды -->
+        <div class="slides">
+            <img src="./img/slide-0.jpg" alt="Слайд 1">
+        </div>
+        <div class="slides">
+            <img src="./img/slide-1.jpg" alt="Слайд 2">
+        </div>
+        <div class="slides">
+            <img src="./img/slide-2.jpg" alt="Слайд 3">
+        </div>
+        <div class="slides">
+            <img src="./img/slide-3.jpg" alt="Слайд 4">
+        </div>
+        <div class="slides">
+            <img src="./img/slide-4.jpg" alt="Слайд 5">
+        </div>
+        <div class="slides">
+            <img src="./img/slide-5.jpg" alt="Слайд 6">
+        </div>
+        <div class="slides">
+            <img src="./img/slide-6.jpg" alt="Слайд 7">
+        </div>
+        <div class="slides">
+            <img src="./img/slide-7.jpg" alt="Слайд 8">
+        </div>
+        <div class="slides">
+            <img src="./img/slide-8.jpg" alt="Слайд 9">
+        </div>
+        <div class="slides">
+            <img src="./img/slide-9.jpg" alt="Слайд 10">
+        </div>
+        <div class="slides">
+            <img src="./img/slide-10.jpg" alt="Слайд 11">
+        </div>
+        <div class="slides">
+            <img src="./img/slide-11.jpg" alt="Слайд 12">
+        </div>
+        <div class="slides">
+            <img src="./img/slide-12.jpg" alt="Слайд 13">
+        </div>
+        <div class="slides">
+            <img src="./img/slide-13.jpg" alt="Слайд 14">
+        </div>
+    
+        <!-- Кнопки "Назад" и "Вперед" -->
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+      </div>
+    
+      <!-- Точки-индикаторы -->
+      <div class="dots-container">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+          <span class="dot" onclick="currentSlide(7)"></span>
+          <span class="dot" onclick="currentSlide(8)"></span>
+          <span class="dot" onclick="currentSlide(9)"></span>
+          <span class="dot" onclick="currentSlide(10)"></span>
+          <span class="dot" onclick="currentSlide(11)"></span>
+          <span class="dot" onclick="currentSlide(12)"></span>
+          <span class="dot" onclick="currentSlide(13)"></span>
+          <span class="dot" onclick="currentSlide(14)"></span>
+      </div>
+    </section>
   </main>
-  <footer>
+  <footer class="footer">
   </footer>
+  <script src="./script.js"></script>
 </body>
 </html>

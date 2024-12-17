@@ -1,36 +1,131 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     height: 100vh;
     max-width: 960px;
     padding: 0;
     margin: 0 auto;
+    font-family: Arial, sans-serif;
+    font-size: 2vi;
+    line-height: 1.6;
+    background-color: #00073b;
+    background-image: url(./img/cover-image-dark.png);
+    background-repeat: repeat;
+    color: white;
 }
 
-  img {
-    width: calc(70vw - 30px); /* Ширина для больших экранов */
-    max-width: 800px; /* Ограничение максимальной ширины */
-    height: auto; /* Сохраняем пропорции */
-  }
-
-  /* Для экранов менее 768px */
-  @media (max-width: 768px) {
-    img {
-      width: calc(90vw - 20px); /* Увеличиваем ширину на меньших экранах */
-    }
-  }
-
-.header {
-    background-image: url(./img/photo_2024-12-15\ 11.42.41.jpeg);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    min-height: 1280px;
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 img {
-    width: calc(100% - 50px);
-    max-width: 800px;
+    width: 100%;
     height: auto;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5% 0;
+}
+
+.title {
+    align-self: center;
+    text-align: center;
+}
+
+.author-photo {
+    align-self: center;
+    max-width: 800px;
   }
+
+  @media (max-width: 768px) {
+    body {
+        font-size: 3vi;
+    }
+
+    .author-photo {
+      width: 90vw;
+    }
+  }
+
+  @media (max-width: 480px) {
+    body {
+        font-size: 4vi;
+    }
+
+    .author-photo {
+      width: 95vw;
+    }
+  }
+
+.content {
+    padding: 5% 0;
+}
+
+.content-header {
+    padding: 5%;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: none; /* Слайды скрыты по умолчанию */
+}
+
+/* Кнопки навигации */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 3px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Точки-индикаторы */
+.dots-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #717171;
+}
 
 .video-container {
 position: relative;
@@ -45,4 +140,8 @@ top: 0;
 left: 0;
 width: 100%;
 height: 100%;
+}
+
+.footer {
+    padding: 5% 0;
 }
